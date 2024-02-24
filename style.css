@@ -35,8 +35,8 @@ img {
 }
 
 h1 {
-	font-size: 48px;
-	font-weight: 700;
+	font-size: 40pt;
+	font-weight: 500;
 	margin: 20px 0;
 }
 
@@ -53,8 +53,8 @@ footer {
 	text-decoration: none;
 	color: var(--color-secondary);
 	background-color: var(--color-main);
-	font-size: 18px;
-	font-weight: 600;
+	font-size: 18pt;
+	font-weight: 300;
 	margin: 5px;
 }
 
