@@ -255,3 +255,25 @@ body {
     font-size: 1.2rem;
   }
 }
+
+/* --- RODAPÉ (Copyright) --- */
+.site-footer {
+  margin-top: 3rem;       /* Distância dos ícones sociais */
+  margin-bottom: 1rem;    /* Margem do fundo da página */
+  animation: fadeIn 2s ease-in;
+}
+
+.site-footer p {
+  font-size: 0.8rem;      /* Fonte pequena */
+  font-weight: 300;       /* Fonte fina */
+  color: var(--color-secondary);
+  opacity: 0.4;           /* Bem apagadinho/discreto */
+  letter-spacing: 0.5px;
+}
+
+/* Responsividade: Garante que não cole no fim da tela em celulares pequenos */
+@media (max-width: 600px) {
+  .site-footer {
+    margin-top: 2rem;
+  }
+}
