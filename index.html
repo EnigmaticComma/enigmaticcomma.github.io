@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Enigmatic Comma</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -13,27 +14,46 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
+  <link rel="stylesheet" href="style.css">
+
   <meta name="msapplication-TileColor" content="#141414">
   <meta name="theme-color" content="#141414">
   <meta name="darkreader-lock">
 </head>
 <body>
-  <div class="logo">
-    <img src="assets/enigmatic_comma_-_logo_only_transp.png" alt="Enigmatic Comma Logo">
+  
+  <div class="logo-container">
+    <div class="video-mask">
+      <img 
+        src="https://raw.githubusercontent.com/Chrisdbhr/chrisdbhr.github.io/refs/heads/master/public/assets/images/resultarias/resultarias.gif" 
+        alt="Logo Background Animation">
+    </div>
     <h1>Enigmatic Comma</h1>
   </div>
-  <footer>
-    <!-- Container 1 -->
-    <div class="container">
-      <a href="https://store.steampowered.com/curator/44885415/" target="_blank" class="button">Steam</a>
-      <a href="https://youtube.com/channel/UCm1WDZAjLu9QgVrmww-9r_Q" target="_blank" class="button">YouTube</a>
-    </div>
-    <!-- Container 2 -->
-    <div class="container">
-      <a href="https://github.com/EnigmaticComma" target="_blank" class="button">Github</a>
-      <a href="https://instagram.com/enigmaticcomma/" target="_blank" class="button">Instagram</a>
-    </div>
-  </footer>
+
+  <nav class="nav-container">
+    <a href="https://store.steampowered.com/curator/44885415/" target="_blank" class="button" aria-label="Steam">
+      <i class="fa-brands fa-steam"></i>
+      <span class="tooltip">Steam</span>
+    </a>
+    
+    <a href="https://youtube.com/channel/UCm1WDZAjLu9QgVrmww-9r_Q" target="_blank" class="button" aria-label="YouTube">
+      <i class="fa-brands fa-youtube"></i>
+      <span class="tooltip">YouTube</span>
+    </a>
+
+    <a href="https://github.com/EnigmaticComma" target="_blank" class="button" aria-label="Github">
+      <i class="fa-brands fa-github"></i>
+      <span class="tooltip">Github</span>
+    </a>
+
+    <a href="https://instagram.com/enigmaticcomma/" target="_blank" class="button" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+      <span class="tooltip">Instagram</span>
+    </a>
+  </nav>
+
 </body>
 </html>
