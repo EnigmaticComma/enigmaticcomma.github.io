@@ -200,3 +200,58 @@ body {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* --- MENU DE JOGOS (Estilo PSX) --- */
+.games-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaço entre os jogos */
+  margin-bottom: 2.5rem; /* Espaço antes das redes sociais */
+  animation: slideUp 0.8s ease-out 0.1s backwards;
+}
+
+.game-link {
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-family: var(--font-main);
+  font-size: 1.5rem; /* Um pouco maior que o texto normal */
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centralizado */
+  gap: 10px;
+  
+  transition: all 0.1s;
+  opacity: 0.8;
+}
+
+/* O Cursor (Setinha) */
+.game-link .cursor {
+  opacity: 0; /* Invisível por padrão */
+  font-size: 1rem;
+  transform: translateX(-10px); /* Começa um pouco para a esquerda */
+  transition: all 0.1s;
+}
+
+/* --- HOVER DOS JOGOS --- */
+.game-link:hover {
+  opacity: 1;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6); /* Glow no texto */
+  letter-spacing: 2px; /* Texto expande levemente */
+}
+
+.game-link:hover .cursor {
+  opacity: 1; /* Aparece */
+  transform: translateX(0); /* Vai para a posição correta */
+  color: var(--color-secondary);
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 600px) {
+  .game-link {
+    font-size: 1.2rem;
+  }
+}
